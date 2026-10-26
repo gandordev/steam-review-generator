@@ -1,0 +1,88 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 2px solid var(--border-color);
+  padding: 16px 24px;
+  background-color: var(--bg-card);
+}
+
+.app-header h1 {
+  margin: 0;
+  color: var(--accent-blue);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.language-selector {
+  display: flex;
+  gap: 6px;
+}
+
+.language-button {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 6px 12px;
+  background-color: var(--bg-input);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.language-button.active,
+.language-button:hover {
+  border-color: var(--accent-blue);
+  background-color: #2a475e;
+  color: #fff;
+}
+
+.app-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  flex: 1;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.categories-grid {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .app-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .app-header {
+    align-items: flex-start;
+    padding: 14px 16px;
+  }
+
+  .app-header h1 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+
+  .app-layout {
+    padding: 16px;
+  }
+}

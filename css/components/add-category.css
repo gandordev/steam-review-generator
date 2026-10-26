@@ -1,0 +1,42 @@
+.add-category-card {
+  border: 2px dashed var(--border-color);
+  background-color: rgb(27 40 56 / 60%);
+}
+
+.add-category-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.form-input,
+.form-select {
+  min-width: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 8px 10px;
+  background-color: var(--bg-input);
+  color: var(--text-main);
+  font-size: 0.85rem;
+}
+
+.icon-input {
+  width: 80px;
+}
+
+.title-input {
+  flex: 1;
+}
+
+.options-input {
+  width: 100%;
+}
+
+.add-category-form [type="submit"] {
+  margin-top: 4px;
+}
