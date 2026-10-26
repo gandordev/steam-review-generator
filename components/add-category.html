@@ -1,0 +1,21 @@
+<section class="card add-category-card" aria-labelledby="txtAddCatTitle">
+  <div class="card-header">
+    <h2 class="card-title" id="txtAddCatTitle"></h2>
+  </div>
+  <form class="add-category-form" id="addCategoryForm">
+    <div class="input-row">
+      <label class="visually-hidden" for="newIcon" id="newIconLabel"></label>
+      <input class="form-input icon-input" id="newIcon" type="text" maxlength="8" />
+      <label class="visually-hidden" for="newTitle" id="newTitleLabel"></label>
+      <input class="form-input title-input" id="newTitle" type="text" required />
+    </div>
+    <label class="visually-hidden" for="newType" id="newTypeLabel"></label>
+    <select class="form-select" id="newType">
+      <option value="stars" id="optStars"></option>
+      <option value="options" id="optCheckboxes"></option>
+    </select>
+    <label class="visually-hidden" for="newOptions" id="newOptionsLabel"></label>
+    <input class="form-input options-input" id="newOptions" type="text" hidden />
+    <button class="button button-blue" id="addCatBtn" type="submit"></button>
+  </form>
+</section>

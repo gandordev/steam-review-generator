@@ -1,0 +1,111 @@
+export const defaultCategories = [
+  {
+    id: "rating",
+    title: { es: "Valoración General", en: "Overall Rating" },
+    icon: "🏆",
+    type: "stars",
+    defaultStars: 5,
+  },
+  {
+    id: "graphics",
+    title: { es: "Gráficos", en: "Graphics" },
+    icon: "🎨",
+    type: "stars",
+    defaultStars: 4,
+  },
+  {
+    id: "gameplay",
+    title: { es: "Jugabilidad", en: "Gameplay" },
+    icon: "🎮",
+    type: "stars",
+    defaultStars: 4,
+  },
+  {
+    id: "audio",
+    title: { es: "Diseño de Sonido", en: "Sound Design" },
+    icon: "🎵",
+    type: "stars",
+    defaultStars: 4,
+  },
+  {
+    id: "story",
+    title: { es: "Historia", en: "Story" },
+    icon: "📖",
+    type: "stars",
+    defaultStars: 3,
+  },
+  {
+    id: "difficulty",
+    title: { es: "Dificultad", en: "Difficulty" },
+    icon: "😟",
+    type: "stars",
+    defaultStars: 3,
+  },
+  {
+    id: "pc_req",
+    title: { es: "Requisitos", en: "PC Requirements" },
+    icon: "💻",
+    type: "options",
+    options: {
+      es: ["Tostadora", "Gama media", "Gama alta", "PC de la NASA"],
+      en: ["Potato - Toaster", "Mid-range", "High-end", "NASA Computer"],
+    },
+  },
+  {
+    id: "size",
+    title: { es: "Tamaño del Juego", en: "Game Size" },
+    icon: "💾",
+    type: "options",
+    options: {
+      es: ["< 5 GB", "5 - 20 GB", "20 - 50 GB", "> 100 GB"],
+      en: ["< 5 GB", "5 - 20 GB", "20 - 50 GB", "> 100 GB"],
+    },
+  },
+  {
+    id: "audience",
+    title: { es: "Audiencia", en: "Audience" },
+    icon: "👥",
+    type: "options",
+    options: {
+      es: ["Niños", "Jugadores casuales", "Jugadores hardcore", "Para todos"],
+      en: ["Kids", "Casual players", "Hardcore players", "Everyone"],
+    },
+  },
+  {
+    id: "grind",
+    title: { es: "Farmeo", en: "Grind" },
+    icon: "⏳",
+    type: "options",
+    options: {
+      es: ["Nada", "Solo opcional", "Promedio", "Extremo"],
+      en: ["None", "Only optional", "Average", "Extreme"],
+    },
+  },
+  {
+    id: "game_time",
+    title: { es: "Duración", en: "Game Length" },
+    icon: "📈",
+    type: "options",
+    options: {
+      es: ["< 5 horas", "5 - 15 horas", "20 - 50 horas", "Infinito"],
+      en: ["< 5 hours", "5 - 15 hours", "20 - 50 hours", "Infinite"],
+    },
+  },
+  {
+    id: "price",
+    title: { es: "Precio", en: "Price" },
+    icon: "🏷️",
+    type: "options",
+    options: {
+      es: ["Gratis", "Vale la pena", "Espera a oferta", "No lo compres"],
+      en: ["Free", "Worth it", "Wait for sale", "Don't buy"],
+    },
+  },
+  {
+    id: "bugs",
+    title: { es: "¿Contiene bugs?", en: "Bug free?" },
+    icon: "🐛",
+    type: "stars",
+    defaultStars: 4,
+  },
+];
