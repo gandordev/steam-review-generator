@@ -64,6 +64,7 @@ Do not push unfinished changes directly to `master` if they should not go live.
 │   ├── data/                # Default categories and language strings
 │   └── app.js               # Application state, events, and BBCode generation
 ├── index.html               # Main page
+├── favicon.ico              # Browser tab icon
 └── LICENSE                  # Non-commercial use license
 ```
 
